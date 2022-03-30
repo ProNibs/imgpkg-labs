@@ -1,0 +1,34 @@
+# Shameless steal from https://github.com/vmware-tanzu/carvel-imgpkg/blob/develop/examples/basic-step-1/config.yml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: default
+  name: simple-app
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    simple-app: ""
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  name: simple-app
+spec:
+  selector:
+    matchLabels:
+      simple-app: ""
+  template:
+    metadata:
+      labels:
+        simple-app: ""
+    spec:
+      containers:
+      - name: simple-app
+        image: nginx:stable
+        env:
+          - name: HELLO_MSG
+            value: stranger
