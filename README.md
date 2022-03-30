@@ -71,10 +71,12 @@ This was just a basic overview of imgpkg.
 Purposely did not touch on the following as they are not commonly used:
 
 * .imgpkg/bundle.yml file
-* Creating and pulling nested bundles (https://carvel.dev/imgpkg/docs/v0.27.0/commands/#pulling-nested-bundles)
+* Copying a bundle from one registry to another
 * Copying via a bundle lock file to ensure same bundle is pulled each time.
+* Creating and pulling nested bundles (https://carvel.dev/imgpkg/docs/v0.27.0/commands/#pulling-nested-bundles)
 * Copying container signatures via cosign
 * Bundling non-distributable layers
+
 
 
 
