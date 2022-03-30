@@ -1,4 +1,4 @@
-# Shameless steal from https://github.com/vmware-tanzu/carvel-imgpkg/blob/develop/examples/basic-step-1/config.yml
+# Shameless stolen from https://github.com/vmware-tanzu/carvel-imgpkg/blob/develop/examples/basic-step-1/config.yml
 ---
 apiVersion: v1
 kind: Service
